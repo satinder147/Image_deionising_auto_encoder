@@ -2,13 +2,13 @@ from keras.models import Model
 from keras.layers import Conv2D,UpSampling2D,MaxPooling2D
 from keras.layers import Input
 
-class Model:
+class Models:
     def __init__(self,w,h,c):
         self.w=w
         self.h=h
         self.c=c
-    def Arch1():
-        inp=Input(shape=(w,h,c))
+    def Arch1(self):
+        inp=Input(shape=(self.w,self.h,self.c))
         enc=Conv2D(128,(3,3),padding='same',activation='relu')(inp)
         enc=MaxPooling2D(pool_size=(2,2))(enc)
         enc=Conv2D(64,(3,3),padding='same',activation='relu')(enc)
