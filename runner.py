@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 n=noise()
 m=Models(240,240,3)
-img=cv2.imread('6.jpg',1)
+img=cv2.imread('a.jpg',1)
 img=cv2.resize(img,(240,240))
 noise=n.add_noise(img)
 img2=noise
@@ -19,15 +19,6 @@ print(img2.shape)
 mod=m.Arch1()
 mod.load_weights('auto.MODEL')
 print('hello')
-img2=mod.predict(img2)[0]
-img2=img2.astype('float')
-
-img2=img2*255.0
-img2=img2.astype('uint8')
-print(np.max(img2))
-
-cv2.imshow('predicted',img2)
-plt.show()
+img=mod.predict(img2)[0]
 cv2.imshow('d',img)
-cv2.imshow('noise',noise)
 cv2.waitKey(0)
