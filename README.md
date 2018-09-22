@@ -46,5 +46,10 @@ I have used keras for training the autoencoder model.
 ## Liked it
 If you liked it you will surely like my other repos as well. You can also have a look at my youtube channel <a href="https://www.youtube.com/c/reactorscience">"reactor science"</a>. If you have any doubts you can contact me on my facebook page <a href="https://www.facebook.com/pg/reactorscience/about/">"reactor science"</a>
 
-
+## References
+1)Deep learning with python by Francois Chollet<br>
+2)keras.io<br>
+3)Deeplearning.ai by coursera(prof Andrew Ng)<br>
+4)CS231n by stanford<br>
+5)Pyimagesearch.com(Adrian Rosenberg)
 
