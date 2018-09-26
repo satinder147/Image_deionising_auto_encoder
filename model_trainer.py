@@ -13,8 +13,6 @@ c=3
 mod=Models(w,h,c)
 auto_encoder=mod.Arch1()
 load_img=loader()
-mod=Models(w,h,c)
-auto_encoder=mod.Arch1()
 auto_encoder.summary()
 x_data,y_data=load_img.load('stone','paper','scissor')
 x_data=np.array(x_data,dtype='float')/255.0
