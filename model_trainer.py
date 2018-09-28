@@ -5,20 +5,15 @@ from model import Models
 from sklearn.model_selection import train_test_split
 from keras.preprocessing.image import ImageDataGenerator
 from keras.optimizers import Adam
-from keras.utils.vis_utils import plot_model
 w=240
 h=240
 c=3
 
 
 mod=Models(w,h,c)
-auto_encoder=mod.Arch2()
-#load_img=loader()
-#mod=Models(w,h,c)
-#auto_encoder=mod.Arch1()
+auto_encoder=mod.Arch1()
+load_img=loader()
 auto_encoder.summary()
-#plot_model(auto_encoder, to_file='model_plot.png', show_shapes=True, show_layer_names=True)
-
 x_data,y_data=load_img.load('stone','paper','scissor')
 x_data=np.array(x_data,dtype='float')/255.0
 y_data=np.array(y_data,dtype='float')/255.0
