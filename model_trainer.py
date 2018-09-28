@@ -11,7 +11,7 @@ c=3
 
 
 mod=Models(w,h,c)
-auto_encoder=mod.Arch1()
+auto_encoder=mod.Arch2()
 load_img=loader()
 auto_encoder.summary()
 x_data,y_data=load_img.load('stone','paper','scissor')
