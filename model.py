@@ -3,6 +3,7 @@ from keras.layers import Conv2D,UpSampling2D,MaxPooling2D
 from keras.layers import Input
 from keras.layers import LeakyReLU
 from keras.layers import BatchNormalization
+from keras import regularizers
 
 class Models:
     def __init__(self,w,h,c):
